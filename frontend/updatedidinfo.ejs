@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include partials/header %>
+</head>
+<body>
+    <%- include partials/navigation %>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-12">
+            </br>
+                <div class="col-xl-12">
+                    <h5>Tool for generate text files for Maestro.</h5>
+                </div>
+            </div>
+        </div>
+        <div>
+            <label for="jiraCard">Jira Card Number: HLTH-</label>
+            <input type="text" id="jiraCard" name="jiraCard">
+        </div>
+        </br>
+        <div id="stackSelector">
+        </div>
+        <div>
+            <textarea name="text_did_area" id="text_did_area" rows=10 cols=15></textarea>
+        </div>
+        <div>
+            <button id="btnGetCurrentDIDInfo">Get current configuration</button>
+        </div>
+        <br />
+        <div id="divCurrentConfig"></div>
+        <br />
+        <div>
+            <button id="generateTextFile" class="hiddenElement">Generate text content</button>
+        </div>
+        <br />
+        <div>
+            <label for="textdata">Press [Generate text content] or [Put text data] from memory to evaluate.</label></br>
+            <textarea name="textdata" id="textdata" rows=10 cols=280></textarea></br>
+            <button id="btnPerformTextDIDInfoValidations">Perform Tests</button></br></br>
+        </div>
+    </div>
+    <div class="container-fluid" id="output" style="color: red;"></div>
+    <div class="container-fluid" id="generateFileOutput" style="color: red;"></div>
+</body>
+</html>

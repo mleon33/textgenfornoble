@@ -1,0 +1,66 @@
+.success,
+.error {
+	color: white;
+	padding: 10px;
+	margin: 5px 0 15px 0;
+}
+
+.success {
+	background: green;
+}
+
+.error {
+	background: red;
+}
+
+body {
+	background: #ece9e6; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #ffffff, #ece9e6); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#ffffff,
+		#ece9e6
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+table,
+td,
+th {
+	border: 1px solid black;
+}
+
+table {
+	border-collapse: collapse;
+	width: auto;
+}
+
+td {
+	height: auto;
+	vertical-align: bottom;
+}
+
+th,
+td {
+	padding: 3px;
+}
+
+input[type=text]:disabled {
+	background: #dddddd;
+	border: 0px;
+}
+
+.noPadding td {
+	padding: 5px;
+}
+
+.noPadding td input {
+	margin: 0px;
+}
+
+.hiddenElement {
+	display: none;
+}
+
+.ShowElement {
+	display: inline;
+}
